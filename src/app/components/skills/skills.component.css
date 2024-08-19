@@ -1,0 +1,43 @@
+/* text shadow */
+.textshadow{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Optional additional styling */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-blue-600 {
+  background-color: #656262; /* Default Blue color */
+}
+
+.bg-green-600 {
+  background-color: #d5d58b; /* Green color on hover */
+}
+
+.text-white {
+  color: #ffffff; /* Default text color */
+}
+
+.text-yellow-100 {
+  color: #000000; /* Yellow text color on hover */
+}

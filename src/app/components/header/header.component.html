@@ -1,0 +1,34 @@
+<header >
+    <nav class="bg-black text-white border-b border-gray-200 px-4 sm:px-6 py-3 dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex flex-wrap items-center justify-between mx-auto max-w-screen-xl">
+            <div class="flex items-center space-x-4 ">
+                <img class="w-12 h-12 rounded-full" src="/assets/images/my_image2.png" alt="Profile Image">
+                <div class="font-medium text-lg dark:text-white">Bhagyashri</div>
+            </div>
+            <div class="flex items-center space-x-4 lg:space-x-6">
+                <button (click)="toggleMenu()" type="button" class="hover:text-black inline-flex items-center p-2 text-white rounded-lg lg:hidden hover:bg-white focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600">
+                    <span class="sr-only">Open main menu</span>
+                    <svg *ngIf="!isMenuOpen" class="w-6 h-6 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <svg *ngIf="isMenuOpen" class="w-6 h-6 hover:text-black" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <div [ngClass]="{'hidden': !isMenuOpen, 'flex': isMenuOpen}" class="w-full lg:flex lg:w-auto lg:order-1">
+                <ul class="flex flex-col mt-8 font-medium lg:flex-row lg:space-x-8 lg:mt-0 lg:space-x-6">
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-5 dark:text-white dark:bg-gray-700 dark:hover:bg-gray-600">Software Developer</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-5 dark:text-white dark:bg-gray-700 dark:hover:bg-gray-600">7355711982</a>
+                    </li>
+                    <li>
+                        <button mat-fab extended class="mat-elevation-z4 p-2 rounded-lg border-2 border-primary-700 text-primary-700 hover:bg-primary-700 hover:text-yellow-500 dark:border-primary-600 dark:text-primary-600 dark:hover:bg-primary-600 dark:hover:text-blue-500 lg:m-2">
+                            <mat-icon>favorite</mat-icon>
+                            <a href="/assets/files/Bhagyashri'sResume.pdf" download="Bhagyashri'sResume.pdf">Download CV</a>
+                        </button>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

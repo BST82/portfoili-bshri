@@ -1,0 +1,9 @@
+/* app.component.css */
+.project-container {
+    padding: 16px;
+  }
+  
+  mat-card {
+    margin-bottom: 16px;
+  }
+  

@@ -1,0 +1,30 @@
+/* text shadow */
+.textshadow{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.timeline {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timeline div {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .date {
+    font-weight: bold;
+  }
+  
+  .description {
+    margin-top: 5px;
+  }
+  .custom-class{
+    background-color: black !important;
+    color: white !important;
+  }
+  .custom-class:hover{
+    background-color: white !important;
+    color: black !important;
+  }

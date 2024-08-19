@@ -1,0 +1,30 @@
+<div style="background-image: url('/assets/images/9545242.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 100%; padding: 20px;">
+  <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4  text-center">Hobbies</h1> 
+
+  <div class="flex items-center justify-center  p-4 ">
+    <div class="max-w-md w-full button-color-change ">
+      <mat-slide-toggle 
+        (change)="onToggleChange($event)" 
+        class="p-4 md:p-6 lg:p-8 rounded-lg shadow-md transition-transform transform hover:scale-105 mat-slide-toggle-white-bg ">
+        Toggle me! to change visibility of hobbies section
+      </mat-slide-toggle>
+    </div>
+  </div>
+  
+  <div *ngIf="isHobbiesVisible" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+    <div class="bg-black hover:bg-white hover:text-black text-white text-center p-4 shadow-lg rounded transition-colors duration-300">
+      <p class="text-lg md:text-xl lg:text-2xl">Audio books listening</p>
+      <p class="text-lg md:text-xl lg:text-2xl">Book Reading</p>
+    </div>
+    <div class="bg-white text-dark hover:bg-black hover:text-white text-center p-4 shadow-lg rounded transition-colors duration-300">
+      <p class="text-lg md:text-xl lg:text-2xl">Learning in spare time</p>
+      <p class="text-lg md:text-xl lg:text-2xl">Playing Badminton</p>
+    </div>
+    <div class="bg-black text-white hover:bg-white hover:text-black text-center p-4 shadow-lg rounded transition-colors duration-300">
+      <p class="text-lg md:text-xl lg:text-2xl">Learn in public</p>
+      <p class="text-lg md:text-xl lg:text-2xl">Hiking</p>
+    </div>
+  </div>
+  
+</div>
+
